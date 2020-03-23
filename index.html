@@ -20,6 +20,9 @@
     </style>
 <title>Hila Cohen</title>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.js"> </script>
 </head>
 <body style="background: linear-gradient(to right, #ffffff 0%, #ff99cc 100%);">
 
@@ -115,6 +118,7 @@ data-share="true">
 <br/>
 <h2 style="color:#ff3399;"><center>Scan My Code</center></h2>
 <br/>
+<center><img src= QR.png width="300" height="300"/></center>
 <br/>
 <br/>
 </section>
@@ -193,12 +197,15 @@ data-share="true">
   <center>
   <div class="form-popup" id="myForm" style="display: block;">
     <form action="mailto:hila5@post.bgu.ac.il" method="post" enctype="text/plain">
-      E-mail:<br>
-      <input type="text" name="mail"><br>
-      Comment:<br>
-      <input type="text" name="comment" size="50"><br><br>
-      <input type="submit" class="sendMail" value="Send">
-      <input type="reset" class="res" value="Reset">
+      Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        Comment:<br>
+        <textarea name="comments" rows="4" cols="36" id="mytextarea"></textarea>
+        <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
     </form>
   </div>
 </center>
@@ -212,11 +219,17 @@ $(function(){
     $('html,body').scrollTo(this.hash,this.hash); 
   });
 });
-</script>
-<script type="text/javascript">
+
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+ <script>
+  $("#mytextarea").emojioneArea({
+    pickerPosition: "right"
+  })
+
+</script>
 </body>
 </html>

@@ -28,3 +28,5 @@ li a {
 li a:hover {
   background-color: #111111;
 }
+
+div.form-popup { width: 700px }
