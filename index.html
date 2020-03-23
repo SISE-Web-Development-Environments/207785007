@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    table {
+      font-family: cursive, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
 <title>Hila Cohen</title>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
@@ -76,9 +93,10 @@ My difficult in this work is to learn a new language.
 
 <section id="like" class="section">
 <br/>
+
 <br/>
 <br/>
-<h2 style="color:#ff3399;"><center>Like</center></h2>
+<h2 style="color:#ff3399;"><center>Give me a Like</center></h2>
 <br/>
 <br/>
 <!-- Your like button code -->
@@ -104,35 +122,88 @@ data-share="true">
 <section id="spa" class="section">
 <br/>
 <br/>
+<br/>
 <h2 style="color:#ff3399;"><center>Answers</center></h2>
+<p style="font-size:25px;"> (1)</p>
+<table>
+  <tr>
+    <th><center>Web1.0</center></th>
+    <th><center>Web2.0</center></th>
+    <th><center>Web3.0</center></th>
+  </tr>
+  <tr>
+    <td><center>חברות מפרסמות תוכן שאנשים צורכים
+    </center></td>
+    <td><center>,אנשים מפרסמים תוכן שאנשים אחרים יכולים לצרוך
+      <br/>
+       חברות בונות פלטפורמות שמאפשרות לאנשים לפרסם תוכן בשביל אנשים אחרים
+      </center></td>
+    <td><center>אנשים בונים אפליקציות
+      שלאנשים אחרים יכולה להיות
+      אינטרקציה איתן, חברות בונות פלטפורמות שמאפשרות
+      לאנשים לפרסם שירותים ע"י
+      מינוף הקשר בין אנשים או תוכן
+      מיוחד
+    </center></td>
+  </tr>
+  <tr>
+    <td><center>מדובר על תוכן סטטי, דרך 
+      אחת לפרסום תוכן ללא
+      השפעה הדדית בין קוראים,
+      בין מפרסמים או בין קוראים
+      למפרסמים
+    </center></td>
+    <td><center> שתי דרכי תקשורת דרך רשתות 
+      .חברתיות
+     משתמש מייצר תוכן ווידאו
+    </center></td>
+    <td><center>.עדיין לא מוגדר
+      <br/>
+      לומדים מה אתה רוצה AI וה Web
+      <br/>
+      ושולחות לך חווית 
+      <br/>
+      אישית Web
+    </center></td>
+  </tr>
+  <tr>
+    <td><center>אתרים אישיים</center>></td>
+    <td><center>בלוגים</center></td>
+    <td><center>בלוגים סמנטיים</center></td>
+  </tr>
+</table>
 <br/>
 <br/>
-<br/>
+<p style="font-size:25px;"> (2)</p> 
+<p style="font-size:25px;"><i>The use-case of searching for a side effects of "Acamol":
+  <br/>
+  In web 1.0 I was needed to hear from someone(not on the internet) on website URL that contains information on Acamol side effects, without that I could not find the information I need.
+  <br/>
+  In web 2.0 I could use google or other search engines the query “side effects of acamol” and use the content of the websites that returned form the search. Another option is to get information from other people on social networks and use other people wisdom by talking to them in blogs or forums.
+  <br/>
+  In web 3.0 there are the machine learning and recommandtion systems that help me get the side effects of acamol based on content of trillions of web pages.
+</i></p>
 </section>
 
 <section id="contact" class="section">
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <h2 style="color:#ff3399;"><center>Contact Me</center></h2>
-<br/>
-<br/>
+  <center>
+  <div class="form-popup" id="myForm" style="display: block;">
+    <form action="mailto:hila5@post.bgu.ac.il" method="post" enctype="text/plain">
+      E-mail:<br>
+      <input type="text" name="mail"><br>
+      Comment:<br>
+      <input type="text" name="comment" size="50"><br><br>
+      <input type="submit" class="sendMail" value="Send">
+      <input type="reset" class="res" value="Reset">
+    </form>
+  </div>
+</center>
 <br/>
 </section>
-
 
 <script type="text/javascript">
 $(function(){
